@@ -6,25 +6,32 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mock": "yarn tsx watch ./src/mocks/http.ts"
   },
   "dependencies": {
     "@faker-js/faker": "^8.2.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.10",
     "init": "^0.1.2",
-    "msw": "^2.3.0",
+    "msw": "^2.0.0",
     "next": "^14",
     "public": "^0.1.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tsx": "4.11.0"
   },
   "devDependencies": {
+    "@mswjs/http-middleware": "^0.10.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "cors": "^2.8.5",
     "eslint": "^8",
     "eslint-config-next": "^14",
+    "express": "^4.19.2",
     "typescript": "^5"
   },
   "msw": {
